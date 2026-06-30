@@ -6,7 +6,7 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
   schedule:
-    - cron: '0 * * * *' # Runs every hour against the default branch  (4.3-dev)
+    - cron: '0 * * * *' # Runs every hour against the default branch (4.3-dev)
 
 jobs:
   sonarqube:
