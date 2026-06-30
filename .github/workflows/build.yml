@@ -7,6 +7,9 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
   workflow_dispatch:
+  schedule:
+    - cron: '0 * * * *'  # Runs every hour on the hour
+
 jobs:
   build:
     name: Build and analyze
